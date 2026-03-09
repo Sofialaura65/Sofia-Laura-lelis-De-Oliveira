@@ -1,0 +1,144 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+}
+
+/* Mantive suas propriedades, apenas mudei height para auto para a legenda subir */
+table { 
+    width: 100%;
+    height: auto; 
+    border-collapse: collapse; 
+}
+
+/* Mantive seu estilo original */
+td {
+    border: solid 1px;
+    width: 3%;
+    height: 8.0vh;
+    text-align: center;
+}
+
+.borderless {
+    border: none;
+}
+
+td h2 {
+    font-size: 1.2rem;
+    margin: 2px 0;
+}
+
+td span {
+    display: block;
+    text-align: left;
+    font-size: 0.8rem;
+}
+
+/* --- Suas cores originais (mantidas) --- */
+.Ametais {
+    background-color: #B3D76A;
+    
+}
+
+
+
+.gases_nobres {
+    background-color: #67AFDE;
+   
+}
+metais_alcalinos {
+    background-color: #F5C95E;
+    
+}
+
+
+.metais_alcalinos_terrosos {
+    background-color: #EFE55B;
+    
+}
+
+
+
+.semimetais {
+    background-color: #66C4BC;
+    transition: 0.5s;}
+
+
+
+.halogenios {
+    background-color: #A7DFF3;
+   
+}
+
+
+
+.outros_metais {
+    background-color: #A2C6D2;
+    
+}
+
+
+
+.metais_transicao {
+    background-color: #F2B0B0;
+}
+
+
+
+.lantanideos {
+    background-color: #97D7E1;
+    
+}
+
+
+
+.actinidios {
+    background-color: #E2BDD8;}
+    
+
+
+
+/* --- Adições para a Legenda --- */
+
+.legenda-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); 
+    grid-template-rows: repeat(2, auto);
+    gap: 15px 20px; 
+    margin-top: 10px; /* Valor baixo para aproximar da tabela */
+    padding: 20px;
+    font-family: sans-serif;
+    font-size: 13px;
+    width: 100%;
+    max-width: 1200px; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.legenda-item {
+    display: flex;
+    align-items: center;
+    white-space: nowrap; 
+}
+
+.box {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    flex-shrink: 0; 
+}
+
+
+
+/* Cores da legenda conectadas às classes que você já criou */
+.box.nao-metais { background-color: #B3D76A; }
+.box.alcalinos { background-color: #F5C95E; }
+.box.semimetais { background-color: #66C4BC; }
+.box.outros-metais { background-color: #A2C6D2; }
+.box.lantanideos { background-color: #97D7E1; }
+.box.gases-nobres { background-color: #67AFDE; }
+.box.alcalino-terrosos { background-color: #EFE55B; }
+.box.halogenios { background-color: #A7DFF3; }
+.box.transicao { background-color: #F2B0B0; }
+.box.actinidios { background-color: #E2BDD8; }
